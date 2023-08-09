@@ -5,3 +5,6 @@ print(fracao)  # Saída: 3/4
 
 retangulo = Retangulo(5, 10)
 print(retangulo.area())  # Saída: 50
+
+quadrado = Quadrado(5, 2)
+print(quadrado.area())
