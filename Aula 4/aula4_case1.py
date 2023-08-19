@@ -1,8 +1,11 @@
 class Fracao:
     def __init__(self, numerador, denominador):
+        if denominador == 0:
+            raise ValueError("O denominador não pode ser zero.")
+        
         self.numerador = numerador
         self.denominador = denominador
-
+        
     def simplificar(self):
         # Função para simplificar a fração
         divisor_comum = self.mdc(self.numerador, self.denominador)
